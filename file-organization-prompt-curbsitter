@@ -1,0 +1,69 @@
+# Role & Objective
+You are an elite Technical Editor, Strategic Project Manager, and Software Architect. Your task is to comprehensively analyze, deduplicate, and synthesize all uploaded source documents, chat histories, research notes, and competitor analyses across the entire lifecycle of this project (including its iterations as Scoop2Go, BleepSweep, and ultimately CurbSitter). 
+
+You will extract every valuable asset, operational formula, design choice, and strategic idea to construct a flawless, production-ready workspace architecture. This will serve as our single source of truth, enabling a human developer to "vibe code" the entire tech stack and website seamlessly using Antigravity 2.0, Gemini, Claude Code, and other AI agents.
+
+---
+
+# Data Filtering & Extraction Rules
+1. **The Evolution Rule:** Trace the evolution of ideas from Scoop2Go to BleepSweep to CurbSitter. Do not merely take the most recent summary if previous iterations contained deep tactical nuances (e.g., specific pricing models, routing formulas, or onboarding flows). If an idea was discussed multiple times, aggregate all unique contributions and trim the redundant "fat."
+2. **The Scope Boundary:** You MUST pull unique data, marketing strategies, tech stack ideas, and logistical metrics from Scoop2Go and BleepSweep files *only* if they apply to the premium trash-rollout model. 
+   * **STRICT EXCLUSION:** Completely filter out and discard all references to pet waste removal/pooper scooper services, with exactly *one* exception: HOA common area pet waste maintenance (trailheads, walking paths, etc.) if explicitly detailed as a CurbSitter B2B service add-on.
+3. **Ruthless Deduplication:** Discard completely abandoned paths, dead-ends, or conversational filler. Keep only viable, high-value, actionable data.
+
+---
+
+# Output Structure
+
+Generate the output as a single, continuous markdown document. Separate distinct files using a double horizontal rule (===).
+
+## SECTION 1: Master Project Guidelines & Planning Document
+
+### Executive Summary
+A concise, incisive overview of CurbSitter's core identity, premium market positioning (the "Uber Black" of residential trash concierge services), and critical takeaways for immediate deployment.
+
+### 1. Brand & Operations Profile
+* **Brand Guidelines & Core Values:** Identity, tone, messaging patterns, and standards.
+* **Service Areas & Target Demographics:** Explicit geographic boundaries (Prescott, AZ Quad-City area) and demographic profiling (Single homeowners, seniors, multi-family, snowbirds, STR/vacation rental owners, property managers, HOAs).
+* **Route Density & Logistical Operations:** Formulas, operational logic, notification workflows, and efficiency metrics extracted from our research.
+
+### 2. Comprehensive Subscription & Add-On Matrix
+Provide a detailed breakdown of pricing structures discussed across all chats. Include a Markdown table comparing and contrasting the various pricing plans we proposed over time, leading up to the final validated model. Detail single-family, senior, STR, and HOA tiers, alongside on-demand add-ons/upsells with suggested price ranges rooted in our competitor research.
+
+### 3. Project Retrospective & Strategic Guardrails
+Analyze the technical debt, misunderstandings, and workflow bottlenecks experienced in our past chats. 
+* Act as our navigator: Provide a blunt, honest assessment of how to optimize our workspace workflow.
+* Outline "areas off-limits" and define explicit safeguards to prevent the developer from getting distracted, losing focus, or veering away from the primary MVP objectives.
+
+===
+
+## SECTION 2: Antigravity 2.0 & Multi-Agent Workspace Files
+
+Generate the exact contents for the following markdown files to plug directly into the codebase workspace. (Note: These are optimized for Gemini and Antigravity 2.0. If specific adjustments or structural modifications are required when switching to Claude Code or specialized coding agents, include explicit, bracketed instructions for those tools).
+
+### 1. README.md
+The developer onboarding compass. Project overview, high-level architecture, developer prerequisites, and repository rules.
+
+### 2. AGENTS.md / CLAUDE.md
+The behavioral and systemic blueprint for autonomous tools. Define explicit agent roles, core competencies, mandatory execution steps, testing constraints, and coding standards to ensure code is written perfectly on the first pass without speculative abstractions.
+
+### 3. PRD.md (Product Requirements Document)
+What we are building. Purpose, user personas, comprehensive feature lists, strict out-of-scope items, and quantifiable success criteria.
+
+### 4. APP_FLOW.md
+Every page, every path. Complete layout mapping of user journeys from landing page to checkout, authenticated vs. unauthenticated states, empty states, and error handling routes.
+
+### 5. TECH_STACK.md
+Exact versions and architectural choices only. Define the full tech stack (Frontend, backend, Supabase database layers, authentication, and deployment). Specify concrete version requirements to eliminate AI guesswork.
+
+### 6. FRONTEND_GUIDELINES.md
+The design system contract. Color palettes (hex codes), typography scales, spacing systems, button variants, and reusable component structural patterns.
+
+### 7. BACKEND_STRUCTURE.md
+Database schemas and API endpoints. Explicit table definitions, field types, relational constraints, foreign keys, and API input/output structures.
+
+### 8. IMPLEMENTATION_PLAN.md
+The four-part chronological build sequence broken down into modular steps (e.g., 1.1, 1.2, 2.1). Prioritizes absolute foundational stability before superficial polish.
+
+### 9. TODO.md
+The living AI Execution Tracker. A comprehensive checkbox list (`- [ ]`) directly derived from the Implementation Plan, enabling us to prompt: *"Read TODO.md and execute Step X"* to maintain flawless session continuity.

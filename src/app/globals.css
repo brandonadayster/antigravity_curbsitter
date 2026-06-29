@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0f1d; /* Deep Onyx */
+  --foreground: #f8fafc; /* Slate 50 */
+  --primary: #06b6d4;    /* Electric Cyan */
+  --secondary: #3b82f6;  /* Neon Blue */
+  --muted: #94a3b8;      /* Slate 400 */
+  --border: rgba(255, 255, 255, 0.08);
+  --card-bg: rgba(11, 17, 30, 0.6);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-card-bg: var(--card-bg);
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  --color-electric-cyan: #06b6d4;
+  --color-electric-cyan-hover: #0891b2;
+  --color-neon-blue: #3b82f6;
+  --color-neon-blue-hover: #2563eb;
+  --color-deep-onyx: #0a0f1d;
+  --color-midnight-blue: #0b111e;
+  --color-slate-gray: #1e293b;
+  --color-slate-gray-hover: #334155;
+  --color-border-glow: rgba(6, 182, 212, 0.25);
+}
+
+body {
+  background: linear-gradient(to bottom, #0a0f1d, #131b2e) no-repeat fixed;
+  color: var(--foreground);
+  overflow-x: clip;
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(6, 182, 212, 0.2); /* Slight 1px cyan border glow */
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.3), 
+    0 10px 10px -5px rgba(0, 0, 0, 0.3),
+    0 0 12px 1px rgba(6, 182, 212, 0.12); /* 1px glow shadow */
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(6, 182, 212, 0.45);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 20px 2px rgba(6, 182, 212, 0.25);
+}
+
+/* Glassmorphism card with glow only on hover */
+.glass-card-hover-glow {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.3), 
+    0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover-glow:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(6, 182, 212, 0.85);
+  transform: scale(1.02);
+  box-shadow: 
+    0 25px 35px -5px rgba(0, 0, 0, 0.4),
+    0 0 24px 3px rgba(6, 182, 212, 0.45);
+}
+
+/* Focus styles matching web guidance */
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-electric-cyan);
+  outline-offset: 2px;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Grid background helper */
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Shoreline Design Aesthetic Utilities */
+.bg-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.glass-card-image-backed {
+  background: 
+    linear-gradient(to bottom, rgba(10, 15, 29, 0.9), rgba(19, 27, 46, 0.95)),
+    url('/images/card_bg.png') no-repeat center !important;
+  background-size: cover !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.premium-hover-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-hover-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 24px 3px rgba(6, 182, 212, 0.3) !important;
+}
