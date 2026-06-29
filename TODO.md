@@ -15,6 +15,7 @@
 - [x] 2.4: Connect Supabase Auth, DB ingestion, and integrate Stripe Elements for secure checkout.
 - [x] 2.5: Integrate out-of-view tracking handlers to pop open local contact lines if form abandonment intent registers.
 - [x] 2.6: Drop the milestone referral program panel into onboarding validation frames for individual user performance tracking.
+- [x] 2.7: Build a secure Stripe Webhook handler to process customer referrals ($20.00 customer balance credit and database logging).
 
 ## Phase 3: Field Runner Hardware & Terminal Upgrades
 - [x] 3.1: Scaffold `/runner-app` mobile UI and mount tracking elements for shift actions, timing breaks, and odometer logging metrics.
